@@ -39,7 +39,7 @@ services:
       - app-tier
     volumes:
       - ./micro-nest:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./micro-nest/node_modules:/usr/src/app/node_modules
     restart: unless-stopped
 
 volumes:
